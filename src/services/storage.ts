@@ -17,12 +17,12 @@ import {
 } from '../data/initialData';
 
 const KEYS = {
-  HOTEL_INFO: 'countryside_hotel_info_v2',
-  ROOMS: 'countryside_rooms_v2',
-  FACILITIES: 'countryside_facilities_v2',
-  GALLERY: 'countryside_gallery_v2',
-  RESERVATIONS: 'countryside_reservations_v2',
-  ENQUIRIES: 'countryside_enquiries_v2',
+  HOTEL_INFO: 'countryside_hotel_info_v3',
+  ROOMS: 'countryside_rooms_v3',
+  FACILITIES: 'countryside_facilities_v3',
+  GALLERY: 'countryside_gallery_v3',
+  RESERVATIONS: 'countryside_reservations_v3',
+  ENQUIRIES: 'countryside_enquiries_v3',
   ADMIN_AUTH: 'countryside_admin_auth_v1',
 };
 

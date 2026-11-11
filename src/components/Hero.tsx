@@ -33,8 +33,8 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Image with Depth Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_countryside_hotel_1794315266996.jpg"
-          alt="Countryside Hotel entrance and grounds in Ogun State"
+          src="/src/assets/images/exterior_countryside_signage_1794425260949.jpg"
+          alt="Countryside Hotel & Lounge and Noir City Club facade in Ogun State"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"
         />
