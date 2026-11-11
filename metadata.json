@@ -1,0 +1,6 @@
+{
+  "name": "Countryside Hotel - Ogun State, Nigeria",
+  "description": "Countryside Hotel offers luxury guest rooms, spacious apartments, 24h restaurant, snooker club, and modern hospitality at Ijoko Road, Ogun State.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
