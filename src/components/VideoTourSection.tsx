@@ -102,7 +102,7 @@ export const VideoTourSection: React.FC<VideoTourSectionProps> = ({
                 <video
                   ref={videoRef}
                   src="/assets/aistudio/WhatsApp_Video_2026-11-12_at_1.16.13_PM_ea405cc6.mp4"
-                  poster="/src/assets/images/exterior_countryside_signage_1794425260949.jpg"
+                  poster="/images/countryside_signage.jpg"
                   controls
                   playsInline
                   preload="metadata"

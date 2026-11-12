@@ -18,9 +18,9 @@ import {
 
 const KEYS = {
   HOTEL_INFO: 'countryside_hotel_info_v4',
-  ROOMS: 'countryside_rooms_v3',
-  FACILITIES: 'countryside_facilities_v3',
-  GALLERY: 'countryside_gallery_v3',
+  ROOMS: 'countryside_rooms_v4',
+  FACILITIES: 'countryside_facilities_v4',
+  GALLERY: 'countryside_gallery_v4',
   RESERVATIONS: 'countryside_reservations_v3',
   ENQUIRIES: 'countryside_enquiries_v3',
   ADMIN_AUTH: 'countryside_admin_auth_v1',

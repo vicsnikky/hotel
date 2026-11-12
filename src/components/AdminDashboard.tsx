@@ -888,7 +888,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           facilities: ['Orthopaedic Bed', 'Smart TV', '24h Electricity', 'Wi-Fi'],
                           bedType: 'Orthopaedic Bed',
                           maxGuests: 2,
-                          image: '/src/assets/images/room_luxury_bedroom_1794315268668.jpg',
+                          image: '/images/countryside_actual_room.jpg',
                           status: 'Available',
                         });
                         setIsNewRoom(true);
