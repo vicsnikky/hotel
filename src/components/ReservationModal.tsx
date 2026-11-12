@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { RoomCategory, Reservation, HotelInfo } from '../types/hotel';
 import { storage } from '../services/storage';
+import { toWhatsAppDigits } from '../utils/whatsapp';
 
 interface ReservationModalProps {
   isOpen: boolean;
@@ -102,7 +103,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
     window.print();
   };
 
-  const cleanWhatsapp = hotelInfo.whatsappPlaceholder.replace(/[^0-9]/g, '');
+  const cleanWhatsapp = toWhatsAppDigits(hotelInfo.whatsappPlaceholder);
   const whatsappBookingMsg = confirmedReservation
     ? encodeURIComponent(
         `Hello Countryside Hotel, I just submitted reservation ${confirmedReservation.bookingRef} for ${confirmedReservation.roomName} (${confirmedReservation.checkInDate} to ${confirmedReservation.checkOutDate}). Please confirm room availability.`

@@ -37,6 +37,7 @@ import {
   ReservationStatus,
 } from '../types/hotel';
 import { storage } from '../services/storage';
+import { toWhatsAppDigits } from '../utils/whatsapp';
 
 interface AdminDashboardProps {
   isOpen: boolean;
@@ -811,7 +812,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           <div className="p-2 bg-neutral-800 rounded text-white flex items-center justify-between">
                             <span>{selectedRes.phone}</span>
                             <a
-                              href={`https://wa.me/${selectedRes.phone.replace(/[^0-9]/g, '')}`}
+                              href={`https://wa.me/${toWhatsAppDigits(selectedRes.phone)}`}
                               target="_blank"
                               rel="noreferrer"
                               className="text-emerald-400 hover:underline"

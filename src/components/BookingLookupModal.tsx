@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, Search, Calendar, Bed, User, Phone, CheckCircle2, Clock, AlertCircle, MessageSquare } from 'lucide-react';
 import { Reservation, HotelInfo } from '../types/hotel';
 import { storage } from '../services/storage';
+import { toWhatsAppDigits } from '../utils/whatsapp';
 
 interface BookingLookupModalProps {
   isOpen: boolean;
@@ -76,7 +77,7 @@ export const BookingLookupModal: React.FC<BookingLookupModalProps> = ({
     }
   };
 
-  const cleanWhatsapp = hotelInfo.whatsappPlaceholder.replace(/[^0-9]/g, '');
+  const cleanWhatsapp = toWhatsAppDigits(hotelInfo.whatsappPlaceholder);
 
   return (
     <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 overflow-y-auto">

@@ -11,7 +11,7 @@ export const INITIAL_HOTEL_INFO: HotelInfo = {
   established: 'October 2024',
   phonePlaceholder: '+234 (0) 800-COUNTRYSIDE', // Editable by management
   emailPlaceholder: 'info@countrysidehotel.ng', // Editable by management
-  whatsappPlaceholder: '+2348000000000', // To be connected when management provides actual WhatsApp number
+  whatsappPlaceholder: '08122039882', // Official WhatsApp contact
   tiktokHandle: '@countrysidehote',
   tiktokUrl: 'https://www.tiktok.com/@countrysidehote',
   totalGuestRooms: 20,

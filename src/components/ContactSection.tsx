@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { HotelInfo } from '../types/hotel';
 import { storage } from '../services/storage';
+import { toWhatsAppDigits } from '../utils/whatsapp';
 
 interface ContactSectionProps {
   hotelInfo: HotelInfo;
@@ -60,7 +61,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ hotelInfo }) => 
     `Hello Countryside Hotel, I would like to inquire about room availability and reservations at your hotel in Ijoko Road, Ogun State.`
   );
 
-  const cleanWhatsappNumber = hotelInfo.whatsappPlaceholder.replace(/[^0-9]/g, '');
+  const cleanWhatsappNumber = toWhatsAppDigits(hotelInfo.whatsappPlaceholder);
 
   return (
     <section id="contact" className="py-24 bg-[#FAF8F5] text-[#1F2421] relative">
@@ -179,7 +180,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ hotelInfo }) => 
                   className="flex-1 py-3 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-xs sm:text-sm rounded flex items-center justify-center gap-2 shadow-xs transition-colors"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  <span>WhatsApp Chat</span>
+                  <span>WhatsApp · {hotelInfo.whatsappPlaceholder}</span>
                 </a>
 
                 <a

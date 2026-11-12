@@ -8,6 +8,7 @@ import { storage } from './services/storage';
 import { HotelInfo, RoomCategory, FacilityItem, GalleryItem, Reservation, ContactEnquiry } from './types/hotel';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { VideoTourSection } from './components/VideoTourSection';
 import { AboutSection } from './components/AboutSection';
 import { RoomsSection } from './components/RoomsSection';
 import { FacilitiesSection } from './components/FacilitiesSection';
@@ -103,6 +104,15 @@ export default function App() {
           hotelInfo={hotelInfo}
           onOpenBookingWithDefaults={handleOpenBookingWithDefaults}
           onExploreFacilities={scrollToFacilities}
+        />
+
+        {/* Video Tour Section */}
+        <VideoTourSection
+          hotelInfo={hotelInfo}
+          onBookClick={() => {
+            setSelectedRoomForBooking(null);
+            setIsBookingOpen(true);
+          }}
         />
 
         {/* About Us Section */}
