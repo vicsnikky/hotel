@@ -9,11 +9,11 @@ export const INITIAL_HOTEL_INFO: HotelInfo = {
   cityState: 'Ijoko, Ogun State',
   country: 'Nigeria',
   established: 'October 2024',
-  phonePlaceholder: '+234 (0) 800-COUNTRYSIDE', // Editable by management
-  emailPlaceholder: 'info@countrysidehotel.ng', // Editable by management
+  phonePlaceholder: '08122039882', // Official contact & WhatsApp line
+  emailPlaceholder: 'Gillsanks@yahoo.com', // Official email correspondence
   whatsappPlaceholder: '08122039882', // Official WhatsApp contact
-  tiktokHandle: '@countrysidehote',
-  tiktokUrl: 'https://www.tiktok.com/@countrysidehote',
+  tiktokHandle: '@Countrysidehotel',
+  tiktokUrl: 'https://www.tiktok.com/@Countrysidehotel',
   totalGuestRooms: 20,
   totalApartments: 3,
   checkInTime: '2:00 PM',

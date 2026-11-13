@@ -1350,7 +1350,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       <div>
                         <label className="block text-neutral-400 mb-1 font-semibold uppercase tracking-wider">
-                          Official Phone (Editable Placeholder)
+                          Official Contact Phone Line
                         </label>
                         <input
                           type="text"
@@ -1437,14 +1437,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           value={infoForm.tiktokHandle}
                           onChange={(e) => setInfoForm({ ...infoForm, tiktokHandle: e.target.value })}
                           className="p-2.5 bg-neutral-800 border border-neutral-700 rounded text-white"
-                          placeholder="@countrysidehote"
+                          placeholder="@Countrysidehotel"
                         />
                         <input
                           type="text"
                           value={infoForm.tiktokUrl}
                           onChange={(e) => setInfoForm({ ...infoForm, tiktokUrl: e.target.value })}
                           className="p-2.5 bg-neutral-800 border border-neutral-700 rounded text-white"
-                          placeholder="https://www.tiktok.com/@countrysidehote"
+                          placeholder="https://www.tiktok.com/@Countrysidehotel"
                         />
                       </div>
                     </div>

@@ -129,11 +129,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ hotelInfo }) => 
                   <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-1">
                     Phone Inquiries
                   </div>
-                  <p className="text-sm font-medium text-neutral-800">
+                  <a
+                    href={`tel:${hotelInfo.phonePlaceholder.replace(/[^0-9+]/g, '')}`}
+                    className="text-sm font-medium text-neutral-800 hover:text-[#143621] hover:underline transition-colors inline-block"
+                  >
                     {hotelInfo.phonePlaceholder}
-                  </p>
-                  <p className="text-[11px] text-neutral-400">
-                    (Contact management for immediate front desk coordination)
+                  </a>
+                  <p className="text-[11px] text-neutral-500">
+                    Direct Front Desk Call &amp; WhatsApp Line
                   </p>
                 </div>
               </div>
@@ -147,9 +150,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ hotelInfo }) => 
                   <div className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-1">
                     Email Correspondence
                   </div>
-                  <p className="text-sm font-medium text-neutral-800">
+                  <a
+                    href={`mailto:${hotelInfo.emailPlaceholder}`}
+                    className="text-sm font-medium text-neutral-800 hover:text-[#143621] hover:underline transition-colors inline-block"
+                  >
                     {hotelInfo.emailPlaceholder}
-                  </p>
+                  </a>
                 </div>
               </div>
 

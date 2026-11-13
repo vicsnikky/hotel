@@ -17,7 +17,7 @@ import {
 } from '../data/initialData';
 
 const KEYS = {
-  HOTEL_INFO: 'countryside_hotel_info_v4',
+  HOTEL_INFO: 'countryside_hotel_info_v5',
   ROOMS: 'countryside_rooms_v4',
   FACILITIES: 'countryside_facilities_v4',
   GALLERY: 'countryside_gallery_v4',

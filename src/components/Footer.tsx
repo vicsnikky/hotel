@@ -94,11 +94,21 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                <span>{hotelInfo.phonePlaceholder}</span>
+                <a
+                  href={`tel:${hotelInfo.phonePlaceholder.replace(/[^0-9+]/g, '')}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {hotelInfo.phonePlaceholder}
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                <span>{hotelInfo.emailPlaceholder}</span>
+                <a
+                  href={`mailto:${hotelInfo.emailPlaceholder}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {hotelInfo.emailPlaceholder}
+                </a>
               </div>
             </div>
 
